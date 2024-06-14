@@ -1,0 +1,122 @@
+/* Algemene stijl voor het hele document */
+body {
+    background-image: url('img/ae47d53a-535e-4f51-b847-38c5de0574a4.jpg');
+    background-position: center;
+    background-size: cover;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* /// Stijl voor alle h1-elementen * */
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+
+/* Stijl voor de pop-up inhoud */
+.popup-content {
+    background-color: #000000;
+    color: #ffffff;
+    /* Wijzig de tekstkleur naar wit */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+}
+
+.showPopup {
+    transform: translate(730%, 350%);
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: black;
+    color: white;
+}
+
+
+.comp {
+    transform: translate(110%, -950%);
+}
+
+.vs {
+    transform: translate(1200%, -950%);
+
+}
+
+.jij {
+    transform: translate(2250%, -950%);
+}
+
+.button {
+    transform: translate(-430%, 100%);
+}
+
+
+
+.higher {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: black;
+    color: white;
+    transform: translate(900%, -100%);
+}
+
+.roll {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: black;
+    color: white;
+    transform: translate(950%, -50%);
+}
+
+.lower {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: red;
+    background-color: black;
+    color: white;
+
+    transform: translate(1000%, -100%);
+}
+
+
+.close {
+    font-size: large;
+}
+
+.dice1-container {
+    transform: translate(-40%, -140%);
+}
+
+.dice2-container {
+    transform: translate(100%, -140%);
+}
+
+.leaderbord {
+    transform: translate(-490%, 300%);
+}
+
+.winlose {
+    transform: translate(-890%, -800%);
+}
+
+button:hover {
+    color: red;
+}
+
+alert {
+    color:  green;
+}

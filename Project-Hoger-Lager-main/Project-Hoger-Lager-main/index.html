@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobbelsteen</title>
+    <style>
+        /* Voeg hier je CSS-styling toe voor de dobbelstenen */
+        .dice {
+            width: 300px; /* Aangepaste breedte */
+            height: 700px; /* Aangepaste hoogte */
+            border: 0px solid rgb(0, 0, 0);
+            display: inline-block;
+            margin: 10px;
+            font-size: 48px; /* Aangepaste lettergrootte voor de punten */
+            line-height: 150px; /* Zorgt voor verticale uitlijning van de punten */
+            text-align: center; /* Centreert de punten binnen de dobbelsteen */
+        }
+
+        .show-1::before {
+            content: '⚀';
+        }
+
+        .show-2::before {
+            content: '⚁';
+        }
+
+        .show-3::before {
+            content: '⚂';
+        }
+
+        .show-4::before {
+            content: '⚃';
+        }
+
+        .show-5::before {
+            content: '⚄';
+        }
+
+        .show-6::before {
+            content: '⚅';
+        }
+    </style>
+</head>
+<body>
+    <div class="dice" id="dice1"></div>
+    <div class="dice" id="dice2"></div>
+    <button id="roll">Roll</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("index.html werkt");
+            let elDiceOne = document.getElementById('dice1');
+            let elDiceTwo = document.getElementById('dice2');
+            let elComeOut = document.getElementById('roll');
+
+            elComeOut.onclick = function () {
+                rollDice();
+            };
+
+            function rollDice() {
+                let diceOne = Math.floor((Math.random() * 6) + 1);
+                let diceTwo = Math.floor((Math.random() * 6) + 1);
+
+                console.log(diceOne + ' ' + diceTwo);
+
+                elDiceOne.className = 'dice show-' + diceOne;
+                elDiceTwo.className = 'dice show-' + diceTwo;
+            }
+        });
+    </script>
+</body>
+</html>
