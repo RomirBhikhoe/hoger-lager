@@ -26,8 +26,8 @@ roll.addEventListener('click', function () {
     diceTwo = Math.floor((Math.random() * 6) + 1);
 
     // de dice img laten zien op de scherm.
-    dice1.src = "./img/dice-" + diceOne + ".png";
-    dice2.src = "./img/dice-" + diceTwo + ".png";
+    dice1.src = "img/dice-" + diceOne + ".png";
+    dice2.src = "img/dice-" + diceTwo + ".png";
 
     //de buttons aan zetten die je moet kliken en uit zetten die gebruikt is.
     roll.disabled = true;
@@ -43,8 +43,8 @@ higher.addEventListener('click', function () {
     dicefore = Math.floor((Math.random() * 6) + 1);
 
     // de dice img laten zien.
-    dice3.src = "./img/dice-" + dicetre + ".png";
-    dice4.src = "./img/dice-" + dicefore + ".png";
+    dice3.src = "img/dice-" + dicetre + ".png";
+    dice4.src = "img/dice-" + dicefore + ".png";
 
     // als jij wint.
     if (diceOne + diceTwo < dicetre + dicefore) {
@@ -99,8 +99,8 @@ lower.addEventListener("click", function () {
     dicefore = Math.floor((Math.random() * 6) + 1);
 
     // de dice img laten zien.
-    dice3.src = "./img/dice-" + dicetre + ".png";
-    dice4.src = "./img/dice-" + dicefore + ".png";
+    dice3.src = "img/dice-" + dicetre + ".png";
+    dice4.src = "img/dice-" + dicefore + ".png";
 
     // als jij wint.
     if (diceOne + diceTwo > dicetre + dicefore) {
